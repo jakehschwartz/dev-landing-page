@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Jake Schwartz's LaTeX Resume
+% Forked From: https://github.com/rohit-gohri/resume
+%
+% Version: v2.0.1 (2021/04/17)
+% By Jake Schwartz (https://jakehschwartz.com)
+%
+% Template: https://github.com/rohit-gohri/resume-template
+%
+% Based On:
+% Medium Length Professional CV
+%
+% Downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Trey Hunner (http://www.treyhunner.com/)
+% Version 2.0 (8/5/13)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[UKenglish]{resume} % Use the custom resume.cls style
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+
+\name{ Jake Schwartrz }
+\setCity{ }
+\setEmail{jakeschwartz@gmail.com.page }
+\setPhoneNum{}
+\setLinkedIn{ jakehschwartz }
+\setGithub{ jakehschwartz }
+
+\setWebsite{ jakehschwartz.com }
+\setWebsiteLink{ rohit.page?utm_source=resume&utm_medium=site&utm_campaign=hf }
+\setPdfKeywords { resume, cv, nodejs, devops, ci-cd, typescript, graphql, mongo }
+\setPdfSubject { Hire Me! }
+
+% Override any variables/commands through a private file
+\InputIfFileExists{\jobname.tmp}{}{}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ Summary }
+Interested in data pipeline and backend development with Scala, search using Elasticsearch,
+maximizing productivity and food trucks.
+\end{rSection]
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+        Languages \& Frameworks     & Scala, Java, Apache Storm, Python
+        Software \& Tools           & Elasticsearch, MongoDB, Redis, DynamoDB, Docker \\
+        Other                       & AWS, Git, CircleCI, Postman \\
+    \end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+    \begin{rSubsection}
+        {\href{https://www.zignallabs.com}{Zignal Labs}
+        { \fmtdate{09}{2020} - Present }
+        {Platform Engineering Manager}
+        {Remote}
+
+        \item Managed a team of 5 engineers
+        \item Defined and accomplished quarterly OKRs based on company goals
+        \item Managed sprint processes, from planning and estimating to assigning tasks and tracking developer metrics
+        \item Collaborated with stakeholders and contributed to product requirements.
+        \item Contributed code when needed
+
+    \end{rSubsection}
+
+    \begin{rSubsection}
+        {\href{https://www.zignallabs.com}{Zignal Labs}
+        { \fmtdate{05}{2019} - {09}{2020} }
+        {Lead. Software Engineer}
+        {Remote}
+
+During my time the Lead Developer for the Platform, my focus was to standardize, document and reduce as much of the sprawling code base as possible. 
+        \item Replaced legacy systems with newer technologies like Akka Streams and AWS Lambda
+        \item Planned and implemented larger data processing systems to allow for platform growth.
+        \item Standardized web framework under common library
+        \item Promoted initiatives to improve documentation, code coverage, integration tests and code style.
+    \end{rSubsection}
+
+    \begin{rSubsection}
+        {\href{https://www.zignallabs.com}{Zignal Labs}
+        { \fmtdate{10}{2017} - {05}{2019} }
+        {Senior Software Engineer: Search \& Analytics }
+        {Remote}
+        Focused on improving the search aspects of our system using Elasticsearch. This included schema and query optimizations, major version migrations and performance tuning. In addition, I mentored junior team members, replaced legacy architecture and improved documentation. 
+        \item Planned, architected and implemented numerous major epics, both product focused and engineering initiatives.
+        \item Improved team productivity by speeding up CircleCI builds, adding code coverage metrics and customizing an SBT plugin to aid with releases.
+        \item Contributed and communicated effectively as a remote member of the team.
+    \end{rSubsection}
+
+    \begin{rSubsection}
+        {\href{https://www.zignallabs.com}{Zignal Labs}
+        { \fmtdate{09}{2015} - {10}{2017} }
+        {Software Engineer}
+        {San Francisco}
+        My main responsibility was the implementation and testing of new features for the backend of the web application but I also worked on the realtime data ingestion pipeline that was the source for the vast majority of the data in the system.
+        \item Developed and tested several key features for the data pipeline running in Apache Storm.
+        \item Created the first tests for the backend search API against Elasticsearch.
+        \item Advised the backend engineering team's transition into a more rigid agile and release process using GitFlow.
+    \end{rSubsection}
+
+
+    \begin{rSubsection}
+        {\href{}{Elbrys Networks}}
+        { \fmtdate{01}{2014} - \fmtdate{09}{2015} }
+        {Software Engineer}
+        {Portsmouth, NH}
+
+        I worked alongside the engineers at Tallac Networks on their cloud-managed networking solution. Assisted in developing, supporting and architecting a backend solution that collected streams of data, automated operations for the devices to execute, and manipulated data to be used by the front end using the application's JSON REST API.
+        \item Sole developer of the backend application and REST API, written in Scala, for wireless management solution using Spring Boot.
+        \item Performed MongoDB migrations, index optimizations, and scaling through sharding.
+        \item Resolved both errors and performance issues that improved responsiveness at application and database layers.
+        \item Scaled system to handle over a thousand access points constantly communicating with the backend.
+        \item Assisted with DevOps duties to maintain good overall system health.
+
+    \end{rSubsection}
+
+    \begin{rSubsection}
+        {\href{}{Elbrys Networks}}
+        { \fmtdate{06}{2010} - \fmtdate{09}{2013} }
+        {Intern}
+        {Portsmouth, NH}
+
+        During the summer breaks, I worked with a small agile team on their mobile fitness app GrokLife, which evolved into a health data aggregation platform, REST API and corresponding mobile SDKs.
+        \item Helped create and launch company’s first iOS and Android app.
+        \item Assisted in designing and developing mobile SDKs to record and send health data from the mobile device to the cloud.
+        \item Learned about the Agile methodology and contributed to company's first Agile team.
+        \item Integrated with several 3rd party APIs, including Fitbit, RunKeeper, Wahoo Fitness and Withings.
+    \end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{ Education }
+
+    \rSubsectionHeading
+        {University Of New Hampshire}
+        { \fmtdate{9}{2012} - \fmtdate{12}{2013} }
+        {\normalfont M.S. in Computer Science}
+        {\normalfont Teaching Assistant}
+        {Durham, NH}
+
+    \rSubsectionHeading
+        {University Of New Hampshire}
+        { \fmtdate{9}{2008} - \fmtdate{5}{2012} }
+        {\normalfont B.S. in Computer Science}
+        {\normalfont Magna Cum Laude; University Honors}
+        {Durham, NH}
+
+\end{rSection}
+
+
+\end{document}
