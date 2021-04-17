@@ -21,7 +21,7 @@ jobs:
           root_file: |
             resume.tex
           args: |
-            -pdf -interaction=nonstopmode -halt-on-erro
+            -pdf -interaction=nonstopmode -halt-on-error
       - uses: actions/upload-artifact@v1
         with:
           path: resume.pdf
