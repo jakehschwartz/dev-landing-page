@@ -1,0 +1,25 @@
+name: Create Resume
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - resume.tex
+      - resume.cls
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: xu-cheng/latex-action@master
+        with:
+          root_file: |
+            resume.tex
+          args: |
+            -pdf -interaction=nonstopmode -halt-on-erro
+      - uses: actions/upload-artifact@v1
+        with:
+          path: resume.pdf
