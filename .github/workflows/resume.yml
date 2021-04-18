@@ -1,8 +1,6 @@
 name: Create Resume
 
 on:
-  pull_request:
-    branches: [ master ]
   push:
     branches: [ master ]
     paths:
@@ -14,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - uses: xu-cheng/latex-action@master
         with:
@@ -22,6 +20,13 @@ jobs:
             resume.tex
           args: |
             -pdf -interaction=nonstopmode -halt-on-error
-      - uses: actions/upload-artifact@v1
+      - name: Commit files # commit the output folder
+        run: |
+          git config --local user.email "test@github.com"
+          git config --local user.name "Resume generator"
+          git add resume.pdf
+          git commit -m "Generate resume"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
         with:
-          path: resume.pdf
+          github_token: ${{ secrets.GITHUB_TOKEN }}
